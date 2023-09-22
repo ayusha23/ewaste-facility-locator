@@ -15,8 +15,10 @@ The E-Waste Facility Locator Web App is a user-friendly platform designed to hel
 - **Booking System:** Schedule a pickup at your chosen disposal plant for hassle-free e-waste disposal.
 
 - **Credit Points:** Facility owners can reward users with credit points for their recycling efforts.
+  
+- **Credit Points Redemption:** Users can redem the credit points and get the beautiful gifts .
 
-- **Social Media Sharing:** Users can share their credit points and recycling achievements on social media to raise awareness about responsible e-waste disposal.
+
 
 ## Getting Started
 
@@ -29,7 +31,7 @@ The E-Waste Facility Locator Web App is a user-friendly platform designed to hel
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/titanium59/E-waste-facility-locator.git
+   git clone https://github.com/ayusha23/ewaste-facility-locator.git
 2. Navigate to the project directory:
 
    ```bash
@@ -52,6 +54,4 @@ The E-Waste Facility Locator Web App is a user-friendly platform designed to hel
 
 2. Open your web browser and access the app at `http://localhost:3000`.
 
-## Contact
 
-If you have any questions or suggestions, please contact utsavpathak59@gmail.com.
