@@ -1,12 +1,12 @@
 # E-waste-facility-locator
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 
 ## Overview
 
 The E-Waste Facility Locator Web App is a user-friendly platform designed to help individuals find the nearest e-waste collection and recycling facilities. It simplifies the process of responsible e-waste disposal and encourages environmentally conscious practices.
 
-![Screenshot](screenshot.png)
+
 
 ## Features
 
