@@ -1,10 +1,7 @@
 const mongoose = require('mongoose');
 const EWPlant = require('../models/garbageplants');
 
-mongoose.connect('mongodb://localhost:27017/E-Waste-Dump' , {
-    useNewUrlParser : true ,
-    useUnifiedTopology : true
-});
+mongoose.connect("mongodb://127.0.0.1/E-Waste-Dump");
 
 const latitude = 28.6523392;
 const longitude = 77.1588096;

@@ -5,8 +5,10 @@ const EWPlant = require('./models/garbageplants');
 const session = require('express-session');
 const User = require('./models/user');
 const mbxGeocoding = require('@mapbox/mapbox-sdk/services/geocoding');
+
 const mapBoxToken = "pk.eyJ1IjoidGl0YW5pdW01OTYiLCJhIjoiY2w2bmIwNWxwMHRqOTNqbzcxNWxzN240ZCJ9.zpgHYiL8reD3OPg-t1_TuQ";
 const geocoder = mbxGeocoding({accessToken : mapBoxToken});
+
 const twilio = require('twilio');
 
 const twilioClient = twilio('ACbead2ad03c0ac313b250b57a745ce88f', '52c89e2cdd857e16bcfacc9ee50130c5');
@@ -15,16 +17,19 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const user = require('./models/user');
 
-mongoose.connect('mongodb://localhost:27017/E-Waste-Dump' , {
-    useNewUrlParser : true ,
-    useUnifiedTopology : true
-});
+
+
+
+
+mongoose.connect("mongodb://127.0.0.1/E-Waste-Dump");
 
 const db = mongoose.connection;
-db.on("error" , console.error.bind(console , "connection error"));
-db.once("open" , () => {
-    console.log("database connected");
-})
+db.on("error", console.error.bind(console, "connection error:"));
+db.once("open", () => {
+  console.log("Database connected");
+});
+
+
 
 const app = express();
 app.use(express.static('public'));
