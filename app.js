@@ -5,8 +5,10 @@ const EWPlant = require('./models/garbageplants');
 const session = require('express-session');
 const User = require('./models/user');
 const mbxGeocoding = require('@mapbox/mapbox-sdk/services/geocoding');
+
 const mapBoxToken = "pk.eyJ1IjoidGl0YW5pdW01OTYiLCJhIjoiY2w2bmIwNWxwMHRqOTNqbzcxNWxzN240ZCJ9.zpgHYiL8reD3OPg-t1_TuQ";
 const geocoder = mbxGeocoding({accessToken : mapBoxToken});
+
 const twilio = require('twilio');
 
 const twilioClient = twilio('ACbead2ad03c0ac313b250b57a745ce88f', '52c89e2cdd857e16bcfacc9ee50130c5');
@@ -14,6 +16,8 @@ const twilioClient = twilio('ACbead2ad03c0ac313b250b57a745ce88f', '52c89e2cdd857
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const user = require('./models/user');
+
+
 
 
 
