@@ -69,21 +69,26 @@
                 <h3 class="home__subtitle">
                   Dispose your E-Waste and earn credits
                 </h3>
+                <br>
+                <br>
                 <h1 class="home__title">
                   E-Waste Facility Locator
                 </h1>
-
+<br>
+<br>
                 <p class="home__description">
                   Find the nearest e-waste facility to recycle all your electronic waste safely and responsibly with
                   government authorised E-Waste disposal facilities.
                 </p>
+                <br>
+                <br>
 
-                <a href="#locate" class="home__button">
+                <a href="#locate" class="home__button" >
                   Explore Locations
                 </a>
               </div>
               <div class="home__img">
-                <img src="assets/img/two.jpg" alt="">
+                <img src="assets/img/five.png" alt="">
               </div>
             </div>
 
@@ -112,13 +117,18 @@
                   <h2 class="locate__title">
                     Find the nearest E-Waste Facility
                   </h2>
+                  <br>
+                  <br>
 
                   <div class="location__field">
                     <label class="location__label" for="location">Enter your location:</label>
                     <br>
+                    <br>
                     <form action="/userdefloc" method="post" style="display: inline;">
-                      <input class="location__input" type="text" id="location" name="location" placeholder="e.g., City, State, Country" required="true">
-                      <button href="/userdefloc" type="submit" class="locate__button-search">Search</button>
+                     <div class="search-box">
+                      <input class="location__input search-input" type="text" id="location" name="location" placeholder="e.g., City, State, Country" required="true">
+                      </div>
+                      <button href="/userdefloc" type="submit" class="locate__button-search search-btn">Search</button>
                     </form>
                     <form action="/getCurrLoc" method="POST" style="display: inline;">
                       <input type="hidden" name="latitude" id="lat" value="">
@@ -147,9 +157,11 @@
         <div class="analyze__content">
 
           <h2 class="analyze__title">Analyze Your E-Waste</h2>
-
+<br>
+<br>
           <div class="analyze__search">
             <label class="analyze__label" for="item">Enter your E-Waste: </label>
+            <br>
             <br>
             <select id="mySelect" class="analyze__input" name="item" id="item">
               <option value="div1">Personal Computers</option>
@@ -1569,7 +1581,7 @@
     </div>
 
     <div class="footer__copyright">
-      <p>Copyright &copy;2023 <span>TeamGriffith</span></p>
+      <p>Copyright &copy;2023 <span>TeamInov8ive</span></p>
     </div>
     </div>
 

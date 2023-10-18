@@ -12,26 +12,28 @@
     hsl(210, 14%, 86%),
     hsl(191, 23%, 86%)
   );
-  --title-color: hsl(0, 3%, 94%);
-  --text-color: hsl(206, 26%, 95%);
+  --title-color: hsl(99, 77%, 85%);
+  --text-color: hsl(310, 13%, 91%);
   --white-color: #fff;
   --body-color: hsl(210, 11%, 4%);
 
   /*========== Font and typography ==========*/
-  --body-font: "Poppins", sans-serif;
+  --body-font: "Courier", serif;
   --second-font: "Lora", serif;
-  --biggest-font-size: 2.25rem;
-  --normal-font-size: 0.938rem;
-  --small-font-size: 0.813rem;
+  --biggest-font-size: 2.35rem;
+  --normal-font-size: 0.95rem;
+  --small-font-size: 0.85rem;
 
   /*========== Font weight ==========*/
-  --font-regular: 400;
-  --font-medium: 500;
-  --font-semi-bold: 600;
+  --font-regular: 500;
+  --font-medium: 600;
+  --font-semi-bold: 700;
+
 
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
+  
 }
 
 /*========== Responsive typography ==========*/
@@ -57,6 +59,7 @@ body {
   font-weight: var(--font-medium);
   background-color: var(--body-color);
   color: var(--text-color);
+  
 }
 
 ul {
@@ -139,7 +142,7 @@ img {
 
 .nav__link {
   color: var(--title-color);
-  transition: color 0.3s;
+  transition: color 0.5s;
 }
 
 .nav__link:hover {
@@ -151,6 +154,7 @@ img {
   flex-direction: column;
   align-items: center;
   row-gap: 0.75rem;
+  
 }
 
 .nav__button-login,
@@ -159,17 +163,17 @@ img {
   color: var(--title-color);
 }
 .nav__button-login{
-  background-color: hsla(60, 7%, 94%, 0.3);
+  background-color: hsla(332, 74%, 63%, 0.87);
   padding: 0.5rem 2rem;
   border: 2px solid var(--title-color);
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
 }
 
 .nav__button-signin {
-  background-color: hsla(60, 7%, 94%, 0.3);
+  background-color: hsla(199, 85%, 51%, 0.885);
   padding: 0.5rem 2rem;
   border: 2px solid var(--title-color);
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
 }
 
 .nav__close {
@@ -196,29 +200,63 @@ img {
   padding-top: 0;
 }
 .home__subtitle {
-  font-size: var(--small-font-size);
+  font-size: var(--font-semi-bold);
   color: var(--first-color);
-  letter-spacing: 3px;
+  letter-spacing: 4px;
+  
   text-align: center;
   margin: .85rem 0rem;
+  
+
+
 }
+
 .home__title {
-  font-size: 3rem;
+  
   font-family: var(--second-font);
   color: var(--title-color);
   text-align: center;
   padding-bottom: 1rem;
+  text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+        #d8d2f1 0%,
+        #8a5abd 29%,
+        #ff1361 67%,
+        #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 100% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s linear infinite;
+    display: inline-block;
+    font-size: 3.8rem;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 100% center;
+  }
 }
 .home__description {
   margin-bottom: 1rem;
   text-align: center;
+  letter-spacing: 1.5px;
+ 
+
 }
+
 .home__button {
-  background-color: hsla(60, 7%, 94%, 0.3);
+  background-color: hsla(31, 81%, 55%, 0.858);
   color:white;
-  padding: 0.5rem 2rem;
-  border: 2px solid var(--title-color);
-  border-radius: 0.75rem;
+  padding: 0.6rem 2rem;
+  border: 4px solid var(--title-color);
+  border-radius: 0.8rem;
+  align-self: center;
+  margin-left: 16rem;
 }
 
 .home__text-img{
@@ -227,7 +265,7 @@ img {
 }
 /* home img */
 .home__img img{
-  width: 500px;
+  width: 600px;
 }
 
 .home__features{
@@ -245,6 +283,8 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: #7e9cfd;
+
 }
 .feature__container img{
   display: block;
@@ -296,22 +336,24 @@ img {
   font-family: var(--font-regular);
   border-style: none;
   display: inline-block;
+ 
   cursor: pointer;
   width: max-content;
   padding: 0.5rem 1rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 24px 32px hsla(210, 54%, 24%, 0.3);
+  border-radius: 0.5rem;
+  box-shadow: 0 14px 12px hsla(210, 57%, 60%, 0.3);
   margin-top: 1rem;
 }
 .locate__button-findme {
-  background-color: hsla(0, 6%, 37%, 0.3);
+  background-color: hsla(0, 68%, 63%, 0.3);
   border: 2px solid var(--title-color);
   border-radius: 0.75rem;
 }
 .locate__button-search{
-  background: var(--gradient-color);
-  color: var(--white-color);
+  background:#44c5ed;
+  color:black;
   margin-left: 1rem;
+  
 }
 
 

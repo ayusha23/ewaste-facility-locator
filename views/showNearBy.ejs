@@ -53,26 +53,35 @@
          </header>
         <section class="map">
 
-            <div class="text__container-1 container">
+            <!-- <div class="text__container-1 container">
                 <div class="text__title">Where Do I Recycle E-Waste?</div>    
                 <div class="text__data">The map enables you to find organizations that recover unwanted electronics. You should contact any of the listed organizations to determine the details of their services, hours, and any potential charges before loading up your vehicle. For more information regarding electronics recycling in India, contact Ministry Of Environment</div>  
-            </div>
+            </div> -->
 
             <div class="map__container container">
                 <h2 class="map__title">Your nearest E-Waste facilities are: </h2>
                 <div class="map" id="map" style="height: 70%; width: 80%; align-self: center;" >
                     <!-- MAP EMBED HERE -->
                     <p>MAP goes here ! </p>
-                    <div id='map' style='width: 400px; height: 300px;'></div>
+                    <div id='map' style='width: 500px; height: 300px; align-items: center margin-left:5rem;'></div>
                 </div>
             </div>
+            <br>
+            <br>
             
             <div class="table__container container">
                 <table class="table">
-                    <tr bgcolor="lightgrey">
-                        <th>Facility name</th>
-                        <th>Address</th>
+                    <tr bgcolor="sky blue">
+                        <th>Facility name
+                           
+                        </th>
+                       
+                        <th>Address
+                            
+                        </th>
+                        
                         <th>Phone</th>
+                       
                         <th>Type</th>
                     </tr>
                     <% for (let i = 0 ; i < nearPlant.length ; i++)  { %>
@@ -86,13 +95,13 @@
                 </table>
             </div> 
            
-            <div class="text__container container">
+            <!-- <div class="text__container container">
                 <div class="text__title">What is E-Waste?</div>    
                 <div class="text__data">E-waste is a popular, informal name for electronic products nearing the end of their "useful life." Computers, televisions, VCRs, stereos, copiers, and fax machines are common electronic products. Many of these products can be reused, refurbished, or recycled.</div>
                 
                 <div class="text__title">Important Reminder:</div>
                 <div class="text__data">Many electronic products (computers, cell phones, tablets, etc.) are used to store personal information. Before donating or recycling your equipment, remember to remove all sensitive and personal information from its memory. Note that simply using your keyboard or mouse to delete files does not necessarily completely remove the information from your device's memory. Your local software store can provide you with the necessary drive cleaning software appropriate for your system.</div>
-            </div>
+            </div> -->
         </section>
     </main>
     
