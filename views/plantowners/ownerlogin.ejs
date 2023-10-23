@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="auto" style="background-color: gray;">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col col-xl-10">
+            <div class="card" style="border-radius: 1rem;">
+              <div class="row g-0">
+                <div class=" col-md-6 col-lg-5 d-none d-md-block">
+                  <img src="http://images.unsplash.com/photo-1586171680404-d9376632f9e4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9"
+                    alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+                </div>
+                <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                  <div class="card-body p-4 px-lg-5 py-4 text-black">
+    
+                    <form action="/plantownerlogin" method="post">
+    
+                      <div class="d-flex align-items-center mb-3 pb-1">
+                        <span class="h1 fw-bold mb-0">Plant Owner Login</span>
+                      </div>
+    
+                      <h5 class="fw-normal mb-2 pb-3" style="letter-spacing: 1px;">Please enter your details</h5>
+    
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="username">Phone Number :</label>
+                        <input type="text" id="username" name="username" class="form-control form-control-lg" />
+                      </div>
+    
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form2Example27">Password :</label>
+                        <input type="password" id="password" name="password" class="form-control form-control-lg" />
+                      </div>
+    
+                      <div class="pt-1 mb-4">
+                        <button class="btn btn-dark rounded-pill btn-lg btn-block" type="submit">Login</button>
+                      </div>
+    
+                          <p class="mb-1 pb-lg-1" style="color: black;">Not a owner? - <a href="/login"
+                            style="color: #393f81;">User Sign In !</a></p>
+                    </form>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <style>
+      body {
+        color: #fff;
+        background: gray;
+        font-family: "Roboto", sans-serif;
+      }
+    
+      .form {
+        margin: 30px auto;
+        width: 400px;
+      }
+      .form form{
+        color: #999;
+        margin-bottom: 15px;
+        border-radius: 3px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+        background: #fff;
+      }
+      .signup-signin-text a{
+        color: #fff;
+      }
+      form h2 {
+        padding-top: 10px;
+        color: #333;
+      }
+    
+      .form-elements {
+        margin-bottom: 25px;
+      }
+    </style>
+</body>
+</html>
