@@ -52,6 +52,4 @@ The E-Waste Facility Locator Web App is a user-friendly platform designed to hel
 
 2. Open your web browser and access the app at `http://localhost:3000`.
 
-## Contact
 
-If you have any questions or suggestions, please contact utsavpathak59@gmail.com.
